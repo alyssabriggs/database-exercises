@@ -36,7 +36,7 @@ SELECT emp_no, first_name, last_name
 FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya') AND gender = 'M';
 
-SELECT first_name, last_name
-FROM employees
+SELECT * FROM employees
 WHERE last_name LIKE 'E%'
+OR last_name LIKE '%E'
 ORDER BY emp_no;
